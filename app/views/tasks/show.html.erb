@@ -1,0 +1,22 @@
+<h1> <%= @task.title %> </h1>
+<br>
+<p> <%= @task.details %> </p>
+
+<% if @task.completed == false %>
+  <%= "❎ The task is not yet completed!" %>
+<% else %>
+  <%= "✅ The task is already finished!" %>
+<% end %>
+
+<br>
+<br>
+
+<%= link_to "📝 Edit", edit_path %>
+
+<br>
+<br>
+
+<%= link_to "🔙", tasks_path %>
+
+
+
